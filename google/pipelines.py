@@ -8,5 +8,8 @@ import re
 
 class Urlpeline(object):
     def process_item(self, item, spider):
-        item
+        itm = "".join(item['url]')
+        p =r e.compile("(/url.*)(q=)(.*)(&sa.*)")
+        url = re.sub(p,r"/3",)
+        item['url'] = url
         return item
